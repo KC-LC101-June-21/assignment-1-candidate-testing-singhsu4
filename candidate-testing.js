@@ -45,7 +45,9 @@ function gradeQuiz(candidateAnswers) {
   //percentage grade 
   
   let numCorrect = 0;
-  let totalNumAnswers = question.lenght;
+  //console.log (typeof numCorrect);
+  let totalNumAnswers = question.length;
+  let totalQuestionCount = 5;
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   console.log("Candidate Name: " + candidateName);
@@ -60,13 +62,13 @@ function gradeQuiz(candidateAnswers) {
     console.log();
 
     if(userAnswer == correctAnswer){
-        numCorrect = numCorrect + 1;
+      numCorrect = numCorrect + 1;
     }
   }
 
   let results = "";
 
-  let grade = numCorrect/totalNumAnswers * 100;
+  let grade = numCorrect/totalQuestionCount * 100 ;
 
   console.log(`>>> Overall Grade: ${grade}% (${numCorrect} of ${questions.length} responses correct) <<<`);
 
