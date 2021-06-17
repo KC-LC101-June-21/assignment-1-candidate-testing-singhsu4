@@ -56,10 +56,12 @@ function gradeQuiz(candidateAnswers) {
     let userAnswer = candidateAnswers[i];
     let correctAnswer = correctAnswers[i];
 
-    console.log(questions[i]);
-    console.log("Your Answer: " + candidateAnswers[i]);
-    console.log("Correct Answer: " + correctAnswers[i]);
-    console.log();
+    //console.log(questions[i]);
+    //console.log("Your Answer: " + candidateAnswers[i]);
+    //console.log("Correct Answer: " + correctAnswers[i]);
+    //console.log();
+    //Create a template literal instead of the 4 console logs you did above.
+    console.log(`${i+1}) ${questions[i]}\nYour Answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`);
 
     if(userAnswer == correctAnswer){
       numCorrect = numCorrect + 1;
