@@ -9,11 +9,11 @@ let question = "Who was the first American female in Space?";
 let correctAnswer = ("Sally Ride");
 let candidateAnswer = "";
 let questions = [
-  "1.Who was the first American woman in space? ", //index 0
-  "2.True or False: 5 kilometer == 5000 meters? ", //index 1
-  "3. (5 + 3)/2 * 10 = ? ", //index 2
-  "4. Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ", //index 3
-  "5. What is the minimum crew size for the ISS? "]; //index 4
+  "Who was the first American woman in space? ", //index 0
+  "True or False: 5 kilometer == 5000 meters? ", //index 1
+  "(5 + 3)/2 * 10 = ? ", //index 2
+  "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ", //index 3
+  "What is the minimum crew size for the ISS? "]; //index 4
 //The simplest way is to use array literal notation []. Anything enclosed in the square brackets will be items in the array. Each item should be followed by a comma ,. If there are no items inside the brackets, then the array is considered empty.
 let correctAnswers = [
   "Sally Ride",
@@ -79,7 +79,7 @@ function gradeQuiz(candidateAnswers) {
   }else{
       console.log(">>> Status: Failed <<<")
   }
-  
+  return grade;
   //let userAnswer = candidateAnswers[i];
   //let correctAnswer = correctAnswers[i];
 
@@ -94,7 +94,7 @@ function gradeQuiz(candidateAnswers) {
 
 
 
-  //return grade;
+  
 
 // for if else statement, in this case the if is executing to see if there is a correct answer, if not, it does not increment the value of correct responses so no else statement is needed. 
 function runProgram() {
