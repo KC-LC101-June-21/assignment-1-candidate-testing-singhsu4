@@ -5,19 +5,19 @@
 // TODO 1.1a: Define candidateName // 
 let candidateName = "";
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question = "Who was the first American female in Space?";
+let question = "Who was the first American female in Space? ";
 let correctAnswer = ("Sally Ride");
 let candidateAnswer = "";
 let questions = [
   "Who was the first American woman in space? ", //index 0
-  "True or False: 5 kilometer == 5000 meters? ", //index 1
+  "True or false: 5 kilometer == 5000 meters? ", //index 1
   "(5 + 3)/2 * 10 = ? ", //index 2
   "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ", //index 3
   "What is the minimum crew size for the ISS? "]; //index 4
 //The simplest way is to use array literal notation []. Anything enclosed in the square brackets will be items in the array. Each item should be followed by a comma ,. If there are no items inside the brackets, then the array is considered empty.
 let correctAnswers = [
   "Sally Ride",
-  "True",
+  "true",
   "40",
   "Trajectory",
   "3"];
@@ -63,7 +63,7 @@ function gradeQuiz(candidateAnswers) {
     //Create a template literal instead of the 4 console logs you did above.
     console.log(`${i+1}) ${questions[i]}\nYour Answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`);
 
-    if(userAnswer == correctAnswer){
+    if(userAnswer.toLowerCase() == correctAnswer.toLowerCase()){
       numCorrect = numCorrect + 1;
     }
   }
